@@ -1,3 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Libre+Baskerville:wght@400;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+    --bg-color: #FEFAE0;
+    --light-rose: #FBE5CB;
+    --dark-rose: #FCDAC8;
+    --light-brown: #F1BF8E;
+    --coral: #E94B46;
+}
+
+.baskerville {
+    font-family: 'Libre Baskerville',
+    serif;
+}
+
+.inter {
+    font-family: 'Inter',
+    sans-serif;
+}
+
+.minWidth {
+    width: 25px;
+    height: 25px;
+}
+

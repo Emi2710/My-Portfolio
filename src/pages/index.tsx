@@ -1,17 +1,59 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import About from '../../components/About'
+import BlogIntro from '../../components/BlogIntro'
+import Contact from '../../components/Contact'
+import Feedback from '../../components/Feedback'
+import Footer from '../../components/Footer'
+import Hero from '../../components/Hero'
+import Navbar from '../../components/Navbar'
+import Projects from '../../components/Projects'
+import Services from '../../components/Services'
 
 
 export default function Home() {
   return (
     <>
       <Head>
-        <title>Create Next App</title>
+        <title>Emilie's portfolio.</title>
         
       </Head>
       <main>
-        <h1 className='bg-red-500'>Hey this is a text</h1>
+        <nav>
+          <Navbar />
+        </nav>
+
+        <header>
+          <Hero />
+        </header>
+
+        <section id="a-propos">
+          <About />
+        </section>
+
+        <section id="services">
+          <Services />
+        </section>
+
+        <section id="projets">
+          <Projects />
+        </section>
+
+        <section>
+          <Feedback />
+        </section>
+
+        <section>
+          <Contact />
+        </section>
+
+        <aside id="blog">
+          <BlogIntro />
+        </aside>
       </main>
+      <footer>
+        <Footer />
+      </footer>
     </>
   )
 }
