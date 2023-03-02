@@ -8,7 +8,7 @@ type Props = {}
 export default function Navbar({}: Props) {
   return (
     <>
-    {/*<div className='flex justify-center bg-[color:var(--bg-color)] inter font-medium items-center h-16'>
+    <div className=' justify-center bg-[color:var(--bg-color)] inter font-medium items-center h-16 hidden sm:flex'>
       <ul className='flex'>
         <Link href="#projets">
           <li className='pr-5'>Projets</li> 
@@ -34,7 +34,7 @@ export default function Navbar({}: Props) {
             <Image src={mail} alt="icone de mail" width={30} /> <p className='opacity-80 pl-1'>Contact</p>   
         </div>
       </Link>  
-  </div>*/}
+  </div>
     </>
     
     

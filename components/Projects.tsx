@@ -87,7 +87,7 @@ export default function Projects({}: Props) {
           <div className='md:flex items-center justify-center p-8'>
             <Image src={escoot} alt="Sportelia" className='md:w-1/3' />
             <div className='inter opacity-80'> 
-              <p className='text-xl font-bold'>E-Scoot E-commerce</p>
+              <p className='text-xl font-bold'>Escootch E-commerce</p>
               <div>
                 <ul className='list-disc flex py-3 font-medium'>
                   <li className='ml-6'>Développement</li>
