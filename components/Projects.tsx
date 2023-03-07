@@ -49,10 +49,10 @@ export default function Projects({}: Props) {
                   <li className='ml-6'>UI Design</li>
                 </ul>
                   <p className='text-sm md:text-base'>
-                    Le design ainsi que le développement a été pensé et fait de A à Z,<br /> charte graphique élaborée par ma personne en accord avec les goûts du client. 
+                    Sportelia est un outil de gestion de franchises de salle de sport.<br /> Il permet au propriétaire de gérer les droits d'accès de ses franchises. 
                   </p>
                   <p className='text-sm pt-2 md:text-base'>
-                    Intégré avec un système de gestion de contenu pour la cliente.
+                    C'est une application web sécurisée développée entièrement par mes soins.
                   </p> 
                 
               </div>
@@ -61,7 +61,7 @@ export default function Projects({}: Props) {
         </SwiperSlide>
 
         <SwiperSlide>
-          <div className='md:flex items-center justify- p-8'>
+          <div className='md:flex items-center justify-center p-8'>
             <Image src={alice} alt="Sportelia" className='md:w-1/3' />
             <div className='inter opacity-80'> 
               <p className='text-xl font-bold'>Alice Formation</p>
@@ -94,10 +94,10 @@ export default function Projects({}: Props) {
                   <li className='ml-6'>UI Design</li>
                 </ul>
                   <p className='text-sm md:text-base'>
-                    Le design ainsi que le développement a été pensé et fait de A à Z,<br /> charte graphique élaborée par ma personne en accord avec les goûts du client. 
+                    E-Scootch est un site e-commerce spécialisé dans les pièces auto.<br /> Le site a été intégré avec un système de gestion contenu moderne. 
                   </p>
                   <p className='text-sm pt-2 md:text-base'>
-                    Intégré avec un système de gestion de contenu pour la cliente.
+                    Le site a été développé en sorte de permettre au client de le personnaliser au maximum.
                   </p> 
                 
                 
@@ -117,10 +117,10 @@ export default function Projects({}: Props) {
                   <li className='ml-6'>UI Design</li>
                 </ul>
                   <p className='text-sm md:text-base'>
-                    Le design ainsi que le développement a été pensé et fait de A à Z,<br /> charte graphique élaborée par ma personne en accord avec les goûts du client. 
+                    Moderne et intuitif, Gericht est un site vitrine pour restaurant.<br /> Il permet au client de consulter les cartes de menus du restaurant. 
                   </p>
                   <p className='text-sm pt-2 md:text-base'>
-                    Intégré avec un système de gestion de contenu pour la cliente.
+                    Ce site crée un lien de proximité entre le restaurant et ses clients en <br />partageant leurs coulisses.
                   </p> 
                 
                 

@@ -12,7 +12,7 @@ export default function Feedback({}: Props) {
       <div className='inter flex flex-col justify-center items-center'>
         <Image src={quotes} alt="icone de citation" />
         <p className='italic md:w-1/2 text-center px-2'>
-          J’intègre un système de gestion de contenu pour vous permettre de modifier, supprimer ou ajouter du contenu à votre site à tout moment.
+          Le site correspond parfaitement à la demande faite et aux critères exigés, même mieux, très professionnel, propre et dans les temps, je recommande à 100%!
         </p>
         <p className='font-medium pt-2'>Alice Formation</p>
       </div>

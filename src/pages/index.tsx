@@ -19,9 +19,9 @@ export default function Home() {
         
       </Head>
       <main>
-        <nav>
+        <div>
           <Navbar />
-        </nav>
+        </div>
 
         <header>
           <Hero />
@@ -43,7 +43,7 @@ export default function Home() {
           <Feedback />
         </section>
 
-        <section>
+        <section id="contact">
           <Contact />
         </section>
 
