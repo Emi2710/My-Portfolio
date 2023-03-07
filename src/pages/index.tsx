@@ -19,21 +19,25 @@ export default function Home() {
         
       </Head>
       <main>
-        <div>
-          <Navbar />
-        </div>
+        <div className='h-screen'>
+          <div>
+            <Navbar />
+          </div>
 
-        <header>
-          <Hero />
-        </header>
+          <header>
+            <Hero />
+          </header> 
+        </div>
+        
+        <section id="services">
+          <Services />
+        </section>
 
         <section id="a-propos">
           <About />
         </section>
 
-        <section id="services">
-          <Services />
-        </section>
+        
 
         <section id="projets">
           <Projects />

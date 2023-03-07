@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Libre+Baskerville:wght@400;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Libre+Baskerville:wght@400;700&family=Plus+Jakarta+Sans:wght@400;500;800&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -9,7 +8,7 @@
     --light-rose: #FBE5CB;
     --dark-rose: #FCDAC8;
     --light-brown: #F1BF8E;
-    --coral: #E94B46;
+    --coral: #d90429;
 }
 
 .baskerville {
@@ -20,6 +19,19 @@
 .inter {
     font-family: 'Inter',
     sans-serif;
+}
+
+.jakarta {
+    font-family: 'Plus Jakarta Sans',
+    sans-serif;
+}
+
+.gradient  {
+    background: -webkit-linear-gradient(25deg,
+    #d64c7f,
+    #ee4758 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .minWidth {
