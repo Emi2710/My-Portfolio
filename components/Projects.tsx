@@ -49,10 +49,10 @@ export default function Projects({}: Props) {
                   <li className='ml-6'>UI Design</li>
                 </ul>
                   <p className='text-sm md:text-base'>
-                    Sportelia est un outil de gestion de franchises de salle de sport.<br /> Il permet au propriétaire de gérer les droits d'accès de ses franchises. 
+                    Sportelia est un outil de gestion de franchises de salle de sport.<br /> Il permet au propriétaire de gérer les droits d&apos;accès de ses franchises. 
                   </p>
                   <p className='text-sm pt-2 md:text-base'>
-                    C'est une application web sécurisée développée entièrement par mes soins.
+                    C&apos;est une application web sécurisée développée entièrement par mes soins.
                   </p> 
                 
               </div>

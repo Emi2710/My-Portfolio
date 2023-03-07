@@ -15,7 +15,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Emilie's portfolio.</title>
+        <title>Emilie&apos;s portfolio.</title>
         
       </Head>
       <main>
