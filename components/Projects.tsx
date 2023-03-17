@@ -23,113 +23,77 @@ type Props = {}
 
 export default function Projects({}: Props) {
   return (
-    <div className='bg-[color:var(--dark-rose)]'>
-      <h3 className='baskerville font-bold text-2xl pt-8 text-center opacity-80'>Quelques uns de mes projets</h3>
-      <Image src={waves} alt="élément décoratif en forme de vagues" className='w-100 m-auto pt-3 md:p-0 md:h-3 h-6'/>
+    <div className=''>
+      <p className='inter gradient uppercase font-semibold sm:text-md md:text-lg tracking-widest pl-3 md:pl-14 mt-9'>projets</p>
+      <h3 className='jakarta font-bold text-2xl md:text-4xl pt-8 pl-3 md:pl-14'>J'apporte des résultats.</h3>
+      <div className='px-3 my-10'>
+        <Swiper 
+          modules={[Navigation, Pagination, Scrollbar, A11y]}
+          spaceBetween={50}
+          onSlideChange={() => console.log('slide change')}
+          onSwiper={(swiper) => console.log(swiper)}
 
-      <Swiper 
-        modules={[Navigation, Pagination, Scrollbar, A11y]}
-        spaceBetween={50}
-        slidesPerView={1}
-        onSlideChange={() => console.log('slide change')}
-        onSwiper={(swiper) => console.log(swiper)}
-        
+          breakpoints={{
+          800: {
+            slidesPerView: 2,
+          },
+          1300: {
+            slidesPerView: 3,
+          },
+        }}
+          
+        >
 
-        
-      >
-
-        <SwiperSlide>
-          <div className='md:flex items-center justify-center p-8'>
-            <Image src={sportelia} alt="Sportelia" className='md:w-1/3' />
-            <div className='inter opacity-80'> 
-              <p className='text-xl font-bold'>Outil de gestion en ligne</p>
-              <div> 
-                <ul className='list-disc flex py-3 font-medium'>
-                  <li className='ml-6'>Développement</li>
-                  <li className='ml-6'>UI Design</li>
-                </ul>
-                  <p className='text-sm md:text-base'>
-                    Sportelia est un outil de gestion de franchises de salle de sport.<br /> Il permet au propriétaire de gérer les droits d&apos;accès de ses franchises. 
-                  </p>
-                  <p className='text-sm pt-2 md:text-base'>
-                    C&apos;est une application web sécurisée développée entièrement par mes soins.
-                  </p> 
-                
+          <SwiperSlide>
+            <div className='md:flex  flex-col items-center justify-center  z-20 '>
+              <Image src={sportelia} alt="Sportelia" className='py-3 height' />
+              <div className='jakarta'> 
+                <p className='inter gradient uppercase font-semibold sm:text-md tracking-widest p-3'>Gestion</p>
+                <p className='text-xl font-bold p-3'>Développement outil de gestion en ligne</p>
+                <p className='p-3'>Voir le projet</p>
               </div>
             </div>
-          </div>
-        </SwiperSlide>
+          </SwiperSlide>
 
-        <SwiperSlide>
-          <div className='md:flex items-center justify-center p-8'>
-            <Image src={alice} alt="Sportelia" className='md:w-1/3' />
-            <div className='inter opacity-80'> 
-              <p className='text-xl font-bold'>Alice Formation</p>
-              <div>
-                <ul className='list-disc flex py-3 font-medium'>
-                  <li className='ml-6'>Développement</li>
-                  <li className='ml-6'>UI Design</li>
-                </ul>
-                  <p className='text-sm md:text-base'>
-                    Le design ainsi que le développement a été pensé et fait de A à Z,<br /> charte graphique élaborée par ma personne en accord avec les goûts du client. 
-                  </p>
-                  <p className='text-sm pt-2 md:text-base'>
-                    Intégré avec un système de gestion de contenu pour la cliente.
-                  </p> 
-                
-                
+          <SwiperSlide>
+            <div className='md:flex  flex-col items-center justify-center  z-20 '>
+              <Image src={alice} alt="Sportelia" className='py-3 height' />
+              <div className='jakarta'> 
+                <p className='inter gradient uppercase font-semibold sm:text-md tracking-widest p-3'>blog</p>
+                <p className='text-xl font-bold p-3'>Alice formation, blog sur les métiers du web</p>
+                <p className='p-3'>Voir le projet</p>
               </div>
             </div>
-          </div>
-        </SwiperSlide>
+          </SwiperSlide>
 
-        <SwiperSlide>
-          <div className='md:flex items-center justify-center p-8'>
-            <Image src={escoot} alt="Sportelia" className='md:w-1/3' />
-            <div className='inter opacity-80'> 
-              <p className='text-xl font-bold'>Escootch E-commerce</p>
-              <div>
-                <ul className='list-disc flex py-3 font-medium'>
-                  <li className='ml-6'>Développement</li>
-                  <li className='ml-6'>UI Design</li>
-                </ul>
-                  <p className='text-sm md:text-base'>
-                    E-Scootch est un site e-commerce spécialisé dans les pièces auto.<br /> Le site a été intégré avec un système de gestion contenu moderne. 
-                  </p>
-                  <p className='text-sm pt-2 md:text-base'>
-                    Le site a été développé en sorte de permettre au client de le personnaliser au maximum.
-                  </p> 
-                
-                
+          <SwiperSlide>
+            <div className='md:flex  flex-col items-center justify-center  z-20 '>
+              <Image src={escoot} alt="Sportelia" className='py-3 height' />
+              <div className='jakarta'> 
+                <p className='inter gradient uppercase font-semibold sm:text-md tracking-widest p-3'>e-commerce</p>
+                <p className='text-xl font-bold p-3'>Escootch : site e-commerce spécialisé dans les pièces auto</p>
+                <p className='p-3'>Voir le projet</p>
               </div>
             </div>
-          </div>
-        </SwiperSlide>
+          </SwiperSlide>
 
-        <SwiperSlide>
-          <div className='md:flex items-center justify-center p-8'>
-            <Image src={gericht} alt="Sportelia" className='md:w-1/3' />
-            <div className='inter opacity-80'> 
-              <p className='text-xl font-bold'>Gericht Restaurant</p>
-              <div>
-                <ul className='list-disc flex py-3 font-medium'>
-                  <li className='ml-6'>Développement</li>
-                  <li className='ml-6'>UI Design</li>
-                </ul>
-                  <p className='text-sm md:text-base'>
-                    Moderne et intuitif, Gericht est un site vitrine pour restaurant.<br /> Il permet au client de consulter les cartes de menus du restaurant. 
-                  </p>
-                  <p className='text-sm pt-2 md:text-base'>
-                    Ce site crée un lien de proximité entre le restaurant et ses clients en <br />partageant leurs coulisses.
-                  </p> 
-                
-                
+          <SwiperSlide>
+            <div className='md:flex  flex-col items-center justify-center  z-20 '>
+              <Image src={gericht} alt="Sportelia" className='py-3 height' />
+              <div className='jakarta'> 
+                <p className='inter gradient uppercase font-semibold sm:text-md tracking-widest p-3'>vitrine</p>
+                <p className='text-xl font-bold p-3'>Site vitrine avec menu pour le restaurant Gericht</p>
+                <p className='p-3'>Voir le projet</p>
               </div>
             </div>
-          </div>
-        </SwiperSlide>
-        
-      </Swiper>
+          </SwiperSlide>
+
+          
+          
+          
+        </Swiper>  
+      </div>
+      
 
       
     </div>

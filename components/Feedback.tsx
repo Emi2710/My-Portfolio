@@ -7,14 +7,17 @@ type Props = {}
 
 export default function Feedback({}: Props) {
   return (
-    <div className='mb-24'>
-      <h3 className='baskerville text-2xl font-bold opacity-80 text-center py-10'>Retours clients :</h3>
-      <div className='inter flex flex-col justify-center items-center'>
-        <Image src={quotes} alt="icone de citation" />
-        <p className='italic md:w-1/2 text-center px-2'>
+    <div className='md:mt-12 py-5'>
+      <p className='inter gradient uppercase font-semibold sm:text-md md:text-lg tracking-widest pl-3 md:pl-14 mt-9'>témoignages</p>
+      <div>
+        <Image src={quotes} alt="guillemets" className='mt-8 ml-3 md:ml-14' />
+        <p className='jakarta font-bold text-xl md:text-3xl pt-8 pl-3 md:pl-14 md:w-3/4 leading-10'>
           Le site correspond parfaitement à la demande faite et aux critères exigés, même mieux, très professionnel, propre et dans les temps, je recommande à 100%!
         </p>
-        <p className='font-medium pt-2'>Alice Formation</p>
+        <p className='inter font-semibold text-lg md:text-2xl pt-8 pl-3 md:pl-14 w-3/4 leading-10'>
+          -Alice
+        </p>
+        <p className='inter opacity-80 font-semibold text-md md:text-xl pt-3 pl-3 md:pl-14 w-3/4'>Du blog "Alice Formation"</p>
       </div>
       
     </div>

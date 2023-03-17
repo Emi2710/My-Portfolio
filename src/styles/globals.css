@@ -34,6 +34,13 @@
     -webkit-text-fill-color: transparent;
 }
 
+.gradient-bg {
+    background: -webkit-linear-gradient(25deg,
+            #d64c7f,
+            #ee4758 50%);
+    
+}
+
 .minWidth {
     width: 25px;
     height: 25px;
@@ -43,3 +50,18 @@
     color: red;
 }
 
+.width {
+    width: auto;
+    height: 375px;
+}
+
+
+
+
+
+@media screen and (min-width:500px) {
+    .height {
+        height: 250px;
+        width:auto;
+    }
+}
