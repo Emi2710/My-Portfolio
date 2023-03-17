@@ -7,7 +7,7 @@ import freelance from '../assets/freelance.svg'
 
 type Props = {}
 
-export default function ({}: Props) {
+export default function Education({}: Props) {
   return (
     <div className='md:flex justify-center jakarta mt-5'>
         <div className='p-5 md:mr-32'>

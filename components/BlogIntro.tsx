@@ -2,7 +2,7 @@ import React from 'react'
 
 type Props = {}
 
-export default function ({}: Props) {
+export default function BlogIntro({}: Props) {
   return (
     <div className='bg-black z-10 my-12 md:flex justify-between'>
       <div className='py-3'>
