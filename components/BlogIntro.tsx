@@ -6,8 +6,8 @@ export default function BlogIntro({}: Props) {
   return (
     <div className='bg-black z-10 my-12 md:flex justify-between'>
       <div className='py-3'>
-        <p className='inter gradient uppercase font-bold sm:text-md md:text-lg tracking-widest pl-3 pt-5 md:pl-14 mt-9'>blog</p>
-        <h3 className='jakarta font-bold text-2xl md:text-4xl pt-5 pl-3 md:pl-14 text-white'>Derniers articles</h3>
+        <p className='inter gradient uppercase font-bold text-xl tracking-widest pl-3 pt-5 md:pl-14 mt-9'>blog</p>
+        <h3 className='jakarta font-bold text-3xl md:text-4xl pt-5 pl-3 md:pl-14 text-white'>Derniers articles</h3>
         <p className='text-white jakarta sm:text-md md:text-lg pl-3 md:pl-14 pt-5 underline pb-5'>Voir tout</p> 
       </div>
       <div className='md:p-16'>

@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import hamburger from '../assets/hamburger.png';
+import hamburger from '../assets/hamburger.svg';
 import logo from '../assets/Logo.png';
 
 type Props = {}

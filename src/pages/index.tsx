@@ -123,8 +123,8 @@ export default function Home() {
         <section className='mt-16'>
           <div className='bg-black py-12'>
             <div className='p-5'>
-              <p className='inter gradient text-center uppercase font-semibold sm:text-md md:text-lg tracking-widest'>faq</p>
-              <h2 className='jakarta text-2xl md:text-4xl font-bold text-center pt-6 px-2 m-auto text-white'>Questions posées fréquemment</h2>
+              <p className='inter gradient text-center uppercase font-bold text-xl tracking-widest'>faq</p>
+              <h2 className='jakarta text-3xl md:text-4xl font-bold text-center pt-6 px-2 m-auto text-white'>Questions posées fréquemment</h2>
             </div>
             <div className='jakarta p-5'>
               <Faq
@@ -135,7 +135,7 @@ export default function Home() {
             </div>
             <div>
               
-              <h2 className='jakarta text-2xl md:text-4xl font-bold mt-24 p-5 m-auto text-white'>Prêts à faire décoller votre projet ?<br /><a href="#" className='jakarta gradient font-bold text-2xl md:text-4xl'>Contactez-moi.</a></h2>
+              <h2 className='jakarta text-3xl md:text-4xl font-bold mt-24 p-5 m-auto text-white'>Prêts à faire décoller votre projet ?<br /><a href="#" className='jakarta gradient font-bold text-3xl md:text-4xl'>Contactez-moi.</a></h2>
 
             </div>
 
