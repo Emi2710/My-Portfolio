@@ -17,7 +17,7 @@ export default function Feedback({}: Props) {
         <p className='inter font-semibold text-lg md:text-2xl pt-8 pl-3 md:pl-14 w-3/4 leading-10'>
           -Alice
         </p>
-        <p className='inter opacity-80 font-semibold text-md md:text-xl pt-3 pl-3 md:pl-14 w-3/4'>Du blog "Alice Formation"</p>
+        <p className='inter opacity-80 font-semibold text-md md:text-xl pt-3 pl-3 md:pl-14 w-3/4'>Du blog &quot;Alice Formation&quot;</p>
       </div>
       
     </div>

@@ -27,8 +27,8 @@ export default function Services({}: Props) {
 
         <div className='md:w-1/4 p-5 md:p-0 md:m-0 mt-3'>
           <Image src={icone2} alt="icone"/>
-          <h3 className='text-lg md:text-xl font-bold py-3'>Les programmes que j'utilise</h3>
-          <p className='inter font-medium opacity-80'>Voici les outils que j'utilise pour créer ces petites merveilles. </p>
+          <h3 className='text-lg md:text-xl font-bold py-3'>Les programmes que j&apos;utilise</h3>
+          <p className='inter font-medium opacity-80'>Voici les outils que j&apos;utilise pour créer ces petites merveilles. </p>
           <ul className='inter font-semibold list-disc pt-3'>
             <li className='ml-4 pt-3'>Langages de programmation</li>
             <li className='ml-4 pt-2'>Webflow et constructeur de site</li>

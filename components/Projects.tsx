@@ -25,7 +25,7 @@ export default function Projects({}: Props) {
   return (
     <div className=''>
       <p className='inter gradient uppercase font-semibold sm:text-md md:text-lg tracking-widest pl-3 md:pl-14 mt-9'>projets</p>
-      <h3 className='jakarta font-bold text-2xl md:text-4xl pt-8 pl-3 md:pl-14'>J'apporte des résultats.</h3>
+      <h3 className='jakarta font-bold text-2xl md:text-4xl pt-8 pl-3 md:pl-14'>J&apos;apporte des résultats.</h3>
       <div className='px-3 my-10'>
         <Swiper 
           modules={[Navigation, Pagination, Scrollbar, A11y]}
