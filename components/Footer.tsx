@@ -1,10 +1,5 @@
-import Image from 'next/image'
 import React from 'react'
 
-import telegram from '../assets/telegram.png'
-import mail from '../assets/arroba.png'
-import linkedin from '../assets/linkedin.png'
-import github from '../assets/github.png'
 
 type Props = {}
 

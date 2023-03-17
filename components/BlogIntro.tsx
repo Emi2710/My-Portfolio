@@ -15,8 +15,8 @@ export default function ({}: Props) {
         <div className='md:py-8 mt-5 mx-3'>
           <div className='text-white pb-5'>
               <p className='inter opacity-80'>10 mars 2021 • 6 min</p>
-              <h4 className='jakarta font-bold text-xl md:text-2xl pt-5 text-white'>Est-il important d'avoir un site web en 2023 ?</h4>
-              <p className='inter underline pt-5'>Lire l'article</p>
+              <h4 className='jakarta font-bold text-xl md:text-2xl pt-5 text-white'>Est-il important d&apos;avoir un site web en 2023 ?</h4>
+              <p className='inter underline pt-5'>Lire l&apos;article</p>
           </div>
           <hr className=' m-auto opacity-40'/>
         </div>
@@ -24,8 +24,8 @@ export default function ({}: Props) {
         <div className='md:py-8 m-3'>
           <div className='text-white pb-5'>
               <p className='inter opacity-80'>10 mars 2021 • 6 min</p>
-              <h4 className='jakarta font-bold text-xl md:text-2xl pt-5 text-white'>Est-il important d'avoir un site web en 2023 ?</h4>
-              <p className='inter underline pt-5'>Lire l'article</p>
+              <h4 className='jakarta font-bold text-xl md:text-2xl pt-5 text-white'>Est-il important d&apos;avoir un site web en 2023 ?</h4>
+              <p className='inter underline pt-5'>Lire l&apos;article</p>
           </div>
           <hr className=' m-auto opacity-40'/>
         </div>  

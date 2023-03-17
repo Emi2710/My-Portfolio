@@ -2,7 +2,6 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 import arrowRight from '../assets/arrow_right.png'
-import arrow from '../assets/arrow.png'
 
 type Props = {}
 

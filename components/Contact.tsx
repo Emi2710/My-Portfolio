@@ -1,8 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
 
-import hands from '../assets/hands.png'
-import arrowRight from '../assets/arrowblack.png'
+
 import mail from '../assets/mail.svg'
 
 type Props = {}

@@ -16,7 +16,6 @@ import escoot from '../assets/projects/escoot.png';
 import gericht from '../assets/projects/gericht.png';
 import sportelia from '../assets/projects/sportelia.png';
 
-import waves from '../assets/waves.png';
 
 
 type Props = {}

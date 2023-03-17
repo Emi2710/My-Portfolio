@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import Image from 'next/image'
+//import Image from 'next/image'
 import About from '../../components/About'
 import BlogIntro from '../../components/BlogIntro'
 import Contact from '../../components/Contact'

@@ -28,7 +28,7 @@ export default function ({}: Props) {
                 <div className='py-5'>
                     <p className='text-lg inter font-semibold'>HETIC</p>
                     <div className=' opacity-80'>
-                        <p className='pt-2'>Bachelor Développeur d'Applications Python</p>
+                        <p className='pt-2'>Bachelor Développeur d&apos;Applications Python</p>
                         <p className='pt-2'>• 2022-2023</p>    
                     </div>
                 </div>
