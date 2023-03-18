@@ -60,7 +60,7 @@ export default function Projects({}: Props) {
               <div className='jakarta'> 
                 <p className='inter gradient uppercase font-bold sm:text-md tracking-widest p-3'>blog</p>
                 <p className='text-xl font-bold p-3'>Alice formation, blog sur les métiers du web</p>
-                <p className='p-3'>Voir le projet</p>
+                <p className='p-3 underline'>Voir le projet</p>
               </div>
             </div>
           </SwiperSlide>
@@ -71,7 +71,7 @@ export default function Projects({}: Props) {
               <div className='jakarta'> 
                 <p className='inter gradient uppercase font-bold sm:text-md tracking-widest p-3'>e-commerce</p>
                 <p className='text-xl font-bold p-3'>Escootch : site e-commerce spécialisé dans les pièces auto</p>
-                <p className='p-3'>Voir le projet</p>
+                <p className='p-3 underline'>Voir le projet</p>
               </div>
             </div>
           </SwiperSlide>
@@ -82,7 +82,7 @@ export default function Projects({}: Props) {
               <div className='jakarta'> 
                 <p className='inter gradient uppercase font-bold sm:text-md tracking-widest p-3'>vitrine</p>
                 <p className='text-xl font-bold p-3'>Site vitrine avec menu pour le restaurant Gericht</p>
-                <p className='p-3'>Voir le projet</p>
+                <p className='p-3 underline'>Voir le projet</p>
               </div>
             </div>
           </SwiperSlide>

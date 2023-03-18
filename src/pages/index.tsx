@@ -14,6 +14,7 @@ import Services from '../../components/Services'
 
 import React from "react"
 import Faq from "react-faq-component"
+//import Test from '../../components/Test'
 
 interface PropTypes {
     data: {
@@ -119,7 +120,7 @@ export default function Home() {
         <section>
           <Feedback />
         </section>
-
+        
         <section className='mt-16'>
           <div className='bg-black py-12'>
             <div className='p-5'>

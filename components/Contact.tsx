@@ -1,28 +1,48 @@
 import Image from 'next/image'
-import React from 'react'
+import React, { useState } from 'react'
 
+import { sendMail } from '../services/sendMail'
 
 import mail from '../assets/mail.svg'
 
 type Props = {}
 
 export default function Contact({}: Props) {
+
+  const [values, setValues] = useState({
+    name: '', 
+    email:'', 
+    message:''})
+  
+
+  const onChange = (e) => {
+    setValues({ ...values, [e.target.name]: e.target.value })
+  }
+
+  async function handleOnClick (){
+    let response = await sendMail(values);
+    console.log(response);
+    
+  }
+
   return (
     <div className='jakarta text-white p-5 md:flex justify-between'>
+      
       <div className='flex flex-col max-w-sm mb-12'>
           <div className='flex flex-col'>
             <label className='pb-2'>Votre nom</label>
-            <input type="text" placeholder='Nom' className='rounded p-2 mb-5'></input> 
+            <input type="text" placeholder='Nom' className='rounded p-2 mb-5 text-black' onChange={(e) => onChange(e)} value={values.name} required></input> 
           </div>
         <div className='flex flex-col'>
           <label className='pb-2'>Votre adresse mail</label>
-          <input type="text" placeholder='Adresse mail' className='mb-5 rounded p-2'></input> 
+          <input type="text" placeholder='Adresse mail' className='mb-5 rounded p-2 text-black' onChange={(e) => onChange(e)} value={values.email} required></input> 
 
-          <label className='pb-2'>Dîtes-moi en peu plus sur ce que vous recherchez ?</label>
-          <input type="textarea" className='h-32 rounded p-2'></input> 
+          <label className='pb-2' >Dîtes-moi en peu plus sur ce que vous recherchez ?</label>
+          <input type="textarea" className='h-32 rounded p-2 text-black' onChange={(e) => onChange(e)} value={values.message} required></input> 
         </div>
         <div>
-          <button className='gradient-bg py-2 px-5 rounded mt-3'>Envoyer</button>
+          <button className='gradient-bg py-2 px-5 rounded mt-3' onClick={ () => handleOnClick()}>Envoyer</button>
+          
         </div>
         
       </div>
