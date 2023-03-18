@@ -51,7 +51,7 @@ export default function Contact({}: Props) {
           <input type="text" placeholder='Adresse mail' className='mb-5 rounded p-2 text-black' onChange={e => setEmail(e.target.value)} value={email} required></input> 
 
           <label className='pb-2' >Dîtes-moi en peu plus sur ce que vous recherchez ?</label>
-          <input type="textarea"placeholder='Tapez votre message ici' className=' rounded px-2 pb-32 pt-2 text-black' onChange={e => setMessage(e.target.value)} value={message} required></input> 
+          <textarea placeholder='Tapez votre message ici' className=' rounded p-2 text-black' rows={6} onChange={e => setMessage(e.target.value)} value={message} required></textarea> 
         </div>
         <div>
           <button className='gradient-bg py-2 px-5 rounded mt-3' onClick={ () => handleOnClick()}>Envoyer</button>
