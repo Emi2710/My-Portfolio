@@ -9,19 +9,32 @@ type Props = {}
 
 export default function Contact({}: Props) {
 
-  const [values, setValues] = useState({
+  /*const [values, setValues] = useState({
     name: '', 
     email:'', 
-    message:''})
+    message:''})*/
   
+  const [email, setEmail] = useState('');
+  const [name, setName] = useState('');
+  const [message, setMessage] = useState('')
+  
+  const [success, setSuccess] = useState(false)
 
-  const onChange = (e) => {
-    setValues({ ...values, [e.target.name]: e.target.value })
-  }
+
 
   async function handleOnClick (){
-    let response = await sendMail(values);
+    let response = await sendMail(email, name, message);
     console.log(response);
+
+    if (response) {
+      setSuccess(true)
+      setEmail('')
+      setName('')
+      setMessage('')
+
+    } else {
+      console.log(response)
+    }
     
   }
 
@@ -31,18 +44,18 @@ export default function Contact({}: Props) {
       <div className='flex flex-col max-w-sm mb-12'>
           <div className='flex flex-col'>
             <label className='pb-2'>Votre nom</label>
-            <input type="text" placeholder='Nom' className='rounded p-2 mb-5 text-black' onChange={(e) => onChange(e)} value={values.name} required></input> 
+            <input type="text" placeholder='Nom' className='rounded p-2 mb-5 text-black' onChange={e => setName(e.target.value)} value={name} required></input> 
           </div>
         <div className='flex flex-col'>
           <label className='pb-2'>Votre adresse mail</label>
-          <input type="text" placeholder='Adresse mail' className='mb-5 rounded p-2 text-black' onChange={(e) => onChange(e)} value={values.email} required></input> 
+          <input type="text" placeholder='Adresse mail' className='mb-5 rounded p-2 text-black' onChange={e => setEmail(e.target.value)} value={email} required></input> 
 
           <label className='pb-2' >Dîtes-moi en peu plus sur ce que vous recherchez ?</label>
-          <input type="textarea" className='h-32 rounded p-2 text-black' onChange={(e) => onChange(e)} value={values.message} required></input> 
+          <input type="textarea"placeholder='Tapez votre message ici' className=' rounded px-2 pb-32 pt-2 text-black' onChange={e => setMessage(e.target.value)} value={message} required></input> 
         </div>
         <div>
           <button className='gradient-bg py-2 px-5 rounded mt-3' onClick={ () => handleOnClick()}>Envoyer</button>
-          
+          {success && <><p className='mt-2'>Merci, votre message a bien été prit en compte.</p></>}
         </div>
         
       </div>
