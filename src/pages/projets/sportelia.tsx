@@ -20,7 +20,7 @@ export default function sportelia({}: Props) {
         <Image src={sportelia2} className='w-100 md:w-1/2 m-auto pb-16' alt="écran de connexion sportelia" />
        
         <p className='mb-8'>Nous sommes conscients que chaque entreprise a des exigences particuli&egrave;res, c&apos;est pourquoi notre application est &eacute;volutive et peut &ecirc;tre personnalis&eacute;e selon vos besoins sp&eacute;cifiques. Si vous avez des exigences particuli&egrave;res pour votre marque de sport, nous sommes l&agrave; pour vous aider &agrave; d&eacute;velopper une solution sur mesure.</p>
-        <p className='mb-8'>En somme, notre application web de gestion de franchises sportives est l&apos;outil id&eacute;al pour les propri&eacute;taires de marques de sport qui cherchent &agrave; optimiser la gestion de leurs franchises. Avec une interface simple et intuitive, une s&eacute;curit&eacute; renforc&eacute;e, une gestion fine des droits d'acc&egrave;s et des tableaux de bord personnalisables, notre application est la solution id&eacute;ale pour les marques de sport qui cherchent &agrave; se d&eacute;velopper et &agrave; prosp&eacute;rer.</p>  
+        <p className='mb-8'>En somme, notre application web de gestion de franchises sportives est l&apos;outil id&eacute;al pour les propri&eacute;taires de marques de sport qui cherchent &agrave; optimiser la gestion de leurs franchises. Avec une interface simple et intuitive, une s&eacute;curit&eacute; renforc&eacute;e, une gestion fine des droits d&apos;acc&egrave;s et des tableaux de bord personnalisables, notre application est la solution id&eacute;ale pour les marques de sport qui cherchent &agrave; se d&eacute;velopper et &agrave; prosp&eacute;rer.</p>  
       </div>
       
     </Layout>

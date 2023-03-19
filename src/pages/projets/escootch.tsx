@@ -23,11 +23,11 @@ export default function escootch({}: Props) {
             
             <p>En plus de cela, nous avons &eacute;galement mis en place un syst&egrave;me de gestion de compte complet qui permet aux clients de suivre leurs commandes, de g&eacute;rer leurs informations personnelles.&nbsp;</p>
             
-            <p>J'ai travaill&eacute; dur pour m'assurer que toutes les fonctionnalit&eacute;s de ce site fonctionnent correctement et que le processus d'achat est fluide et rapide. Nous avons &eacute;galement pris des mesures de s&eacute;curit&eacute; strictes pour garantir que les informations personnelles des clients sont stock&eacute;es en toute s&eacute;curit&eacute; et ne sont pas expos&eacute;es &agrave; des tiers.</p>
+            <p>J&apos;ai travaill&eacute; dur pour m&apos;assurer que toutes les fonctionnalit&eacute;s de ce site fonctionnent correctement et que le processus d&apos;achat est fluide et rapide. Nous avons &eacute;galement pris des mesures de s&eacute;curit&eacute; strictes pour garantir que les informations personnelles des clients sont stock&eacute;es en toute s&eacute;curit&eacute; et ne sont pas expos&eacute;es &agrave; des tiers.</p>
             <p>Pour une experience optimale, il a &eacute;t&eacute; ajout&eacute; diff&eacute;rents moyens de paiements : PayPal et Stripe.</p>
             <Image src={escootch3} className='w-100 md:w-1/2 m-auto my-5' alt="photo" />
-            <p>Le site a &eacute;t&eacute; integr&eacute; avec un syst&egrave;me de gestion de contenu complet qui permet &agrave; mon client d'ajouter et/ou de supprimer des nouveaux produits ainsi que de les modifier &agrave; tout moment.</p>
-            <p>En somme, j&apos;ai travaill&eacute; dur pour cr&eacute;er une plateforme en ligne facile &agrave; utiliser, rapide et s&eacute;curis&eacute;e pour les clients d'Escootch. Je suis fier de ce que nous avons accompli et je suis convaincu que les clients auront une exp&eacute;rience de shopping en ligne agr&eacute;able et pratique lorsqu'ils visiteront ce site.</p>
+            <p>Le site a &eacute;t&eacute; integr&eacute; avec un syst&egrave;me de gestion de contenu complet qui permet &agrave; mon client d&apos;ajouter et/ou de supprimer des nouveaux produits ainsi que de les modifier &agrave; tout moment.</p>
+            <p>En somme, j&apos;ai travaill&eacute; dur pour cr&eacute;er une plateforme en ligne facile &agrave; utiliser, rapide et s&eacute;curis&eacute;e pour les clients d&apos;Escootch. Je suis fier de ce que nous avons accompli et je suis convaincue que les clients auront une exp&eacute;rience de shopping en ligne agr&eacute;able et pratique lorsqu&apos;ils visiteront ce site.</p>
 
         </div>
     </Layout>
