@@ -39,7 +39,7 @@ export default function Contact({}: Props) {
   }
 
   return (
-    <div className='jakarta text-white p-5 md:flex justify-between'>
+    <div className='jakarta text-white p-5 md:flex justify-between' id="contact">
       
       <div className='flex flex-col max-w-sm mb-12'>
           <div className='flex flex-col'>

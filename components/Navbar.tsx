@@ -17,7 +17,7 @@ export default function Navbar({}: Props) {
           <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
             <Link
               className="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-white"
-              href="#"
+              href="/#"
             >
               <Image src={logo} alt="Logo lettre E"  width={25}/>
             </Link>
@@ -39,7 +39,7 @@ export default function Navbar({}: Props) {
               <li className="nav-item">
                 <a
                   className="px-3 py-2 flex items-center font-semibold leading-snug hover:opacity-75"
-                  href="#projets"
+                  href="/#projets"
                 >
                   <span className="ml-2">Projets</span>
                 </a>
@@ -47,7 +47,7 @@ export default function Navbar({}: Props) {
               <li className="nav-item">
                 <a
                   className="px-3 py-2 flex items-center font-semibold leading-snug hover:opacity-75"
-                  href="#a-propos"
+                  href="/#a-propos"
                 >
                   <span className="ml-2">À propos</span>
                 </a>
@@ -55,7 +55,7 @@ export default function Navbar({}: Props) {
               <li className="nav-item">
                 <a
                   className="px-3 py-2 flex items-center font-semibold leading-snug hover:opacity-75"
-                  href="#services"
+                  href="/#services"
                 >
                   <span className="ml-2">Services</span>
                 </a>
@@ -64,7 +64,7 @@ export default function Navbar({}: Props) {
               <li className="nav-item">
                 <a
                   className="px-3 py-2 flex items-center font-semibold leading-snug hover:opacity-75"
-                  href="#blog"
+                  href="/#blog"
                 >
                   <span className="ml-2">Blog</span>
                 </a>
@@ -72,7 +72,7 @@ export default function Navbar({}: Props) {
               <li className="nav-item">
                 <a
                   className="px-3 py-2 flex items-center font-semibold leading-snug hover:opacity-75"
-                  href="#contact"
+                  href="/#contact"
                 >
                   <span className="ml-2 underline">Réserver un appel</span>
                 </a>

@@ -20,7 +20,7 @@ export default function Services({}: Props) {
           <p className='inter font-medium opacity-80'>Un site dynamique avec un design moderne qui répond à vos besoins.</p>
           <ul className='inter font-bold list-disc pt-3'>
             <li className='ml-4 pt-3'>Création de sites web</li>
-            <li className='ml-4 pt-2'>Refonte et/ou optimisation de sites existants</li>
+            <li className='ml-4 pt-2'>Refonte/optimisation de sites existants</li>
             <li className='ml-4 pt-2'>Maintenance de site web</li>
           </ul>
         </div>
