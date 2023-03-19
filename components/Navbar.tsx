@@ -38,7 +38,7 @@ export default function Navbar({}: Props) {
             <ul className="flex flex-col lg:flex-row list-none lg:ml-auto opacity-80 inter">
               <li className="nav-item">
                 <Link
-                  className="px-3 py-2 flex items-center font-semibold leading-snug hover:opacity-75"
+                  className="px-3 py-2 flex items-center font-semibold leading-snug hover:opacity-75 duration-75"
                   href="/#projets"
                 >
                   <span className="ml-2">Projets</span>
@@ -46,7 +46,7 @@ export default function Navbar({}: Props) {
               </li>
               <li className="nav-item">
                 <Link
-                  className="px-3 py-2 flex items-center font-semibold leading-snug hover:opacity-75"
+                  className="px-3 py-2 flex items-center font-semibold leading-snug hover:opacity-75 duration-75"
                   href="/#a-propos"
                 >
                   <span className="ml-2">À propos</span>
@@ -54,7 +54,7 @@ export default function Navbar({}: Props) {
               </li>
               <li className="nav-item">
                 <Link
-                  className="px-3 py-2 flex items-center font-semibold leading-snug hover:opacity-75"
+                  className="px-3 py-2 flex items-center font-semibold leading-snug hover:opacity-75 duration-75"
                   href="/#services"
                 >
                   <span className="ml-2">Services</span>
@@ -63,7 +63,7 @@ export default function Navbar({}: Props) {
 
               <li className="nav-item">
                 <Link
-                  className="px-3 py-2 flex items-center font-semibold leading-snug hover:opacity-75"
+                  className="px-3 py-2 flex items-center font-semibold leading-snug hover:opacity-75 duration-75"
                   href="/#blog"
                 >
                   <span className="ml-2">Blog</span>
@@ -71,7 +71,7 @@ export default function Navbar({}: Props) {
               </li>
               <li className="nav-item">
                 <Link
-                  className="px-3 py-2 flex items-center font-semibold leading-snug hover:opacity-75"
+                  className="px-3 py-2 flex items-center font-semibold leading-snug hover:opacity-75 duration-75"
                   href="/#contact"
                 >
                   <span className="ml-2 underline">Réserver un appel</span>

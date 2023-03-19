@@ -16,6 +16,8 @@ import React from "react"
 import Faq from "react-faq-component"
 //import Test from '../../components/Test'
 
+import { motion } from 'framer-motion'
+
 interface PropTypes {
     data: {
         title: string,
@@ -76,10 +78,23 @@ const config = {
 }
 
 export default function Home() {
+
+  const textAnimation = {
+    hidden: {
+      y: -100,
+      opacity: 0,
+    },
+    visible: custom => ({
+      y: 0,
+      opacity: 1,
+      transition: { duration: custom * 0.2}
+    }),
+  }
+
   return (
     <>
       <Head>
-        <title>Emilie&apos;s portfolio.</title>
+        <title>Votre site web, conçu sur mesure - Faites appel à une développeuse web professionnelle</title>
         
       </Head>
       <main>
@@ -134,11 +149,14 @@ export default function Home() {
                 //config={config}
               />  
             </div>
-            <div>
+            <motion.div 
+              initial="hidden"
+              whileInView="visible"
+              viewport={{amount: 0.2}}>
               
-              <h2 className='jakarta text-3xl md:text-4xl font-bold mt-24 p-5 m-auto text-white'>Prêts à faire décoller votre projet ?<br /><a href="#" className='jakarta gradient font-bold text-3xl md:text-4xl'>Contactez-moi.</a></h2>
+              <motion.h2 variants={textAnimation} custom={3} className='jakarta text-3xl md:text-4xl font-bold mt-24 p-5 m-auto text-white'>Prêts à faire décoller votre projet ?<br /><a href="#" className='jakarta gradient font-bold text-3xl md:text-4xl'>Contactez-moi.</a></motion.h2>
 
-            </div>
+            </motion.div>
 
             <Contact />
           </div>

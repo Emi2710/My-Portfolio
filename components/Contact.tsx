@@ -1,18 +1,18 @@
 import Image from 'next/image'
 import React, { useState } from 'react'
+import Link from 'next/link'
 
 import { sendMail } from '../services/sendMail'
 
 import mail from '../assets/mail.svg'
 
+import { motion } from 'framer-motion'
+
 type Props = {}
 
 export default function Contact({}: Props) {
 
-  /*const [values, setValues] = useState({
-    name: '', 
-    email:'', 
-    message:''})*/
+  
   
   const [email, setEmail] = useState('');
   const [name, setName] = useState('');
@@ -39,7 +39,7 @@ export default function Contact({}: Props) {
   }
 
   return (
-    <div className='jakarta text-white p-5 md:flex justify-between' id="contact">
+    <motion.div className='jakarta text-white p-5 md:flex justify-between' id="contact">
       
       <div className='flex flex-col max-w-sm mb-12'>
           <div className='flex flex-col'>
@@ -53,8 +53,8 @@ export default function Contact({}: Props) {
           <label className='pb-2' >Dîtes-moi en peu plus sur ce que vous recherchez ?</label>
           <textarea placeholder='Tapez votre message ici' className=' rounded p-2 text-black' rows={6} onChange={e => setMessage(e.target.value)} value={message} required></textarea> 
         </div>
-        <div>
-          <button className='gradient-bg py-2 px-5 rounded mt-3' onClick={ () => handleOnClick()}>Envoyer</button>
+        <div >
+          <motion.button whileHover={{ scale: 0.95 }} className='gradient-bg py-2 px-5 rounded mt-3' onClick={ () => handleOnClick()}>Envoyer</motion.button>
           {success && <><p className='mt-2'>Merci, votre message a bien été prit en compte.</p></>}
         </div>
         
@@ -70,14 +70,14 @@ export default function Contact({}: Props) {
         <div>
           <ul className='text-lg'>
             <div className='flex justify-between my-5'>
-              <li>Projets</li>
-              <li>À propos</li>
-              <li>Services</li>  
+              <Link href="/#projets" className='hover:opacity-80 duration-75'><li>Projets</li></Link>
+              <Link href="/#a-propos" className='hover:opacity-80 duration-75'><li>À propos</li></Link>
+              <Link href="/#services" className='hover:opacity-80 duration-75'><li>Services</li></Link>   
             </div>
             <div className='flex justify-between my-5'>
-              <li>Blog</li>
-              <li>LinkedIn</li>
-              <li>Github</li>  
+              <Link href="/#blog" className='hover:opacity-80 duration-75'><li>Blog</li></Link>
+              <Link href="/#" className='hover:opacity-80 duration-75'><li>LinkedIn</li></Link>
+              <Link href="/#" className='hover:opacity-80 duration-75'><li>Github</li></Link>    
             </div>
             
             
@@ -85,6 +85,6 @@ export default function Contact({}: Props) {
         </div>
       </div>
       
-    </div>
+    </motion.div>
   )
 }

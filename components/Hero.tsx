@@ -3,6 +3,8 @@ import Link from 'next/link'
 import React from 'react'
 import arrowRight from '../assets/arrow_right.png'
 
+import { motion } from 'framer-motion'
+
 type Props = {}
 
 export default function Hero({}: Props) {
@@ -14,10 +16,15 @@ export default function Hero({}: Props) {
         <p className=' hidden md:block text-lg pt-3 jakarta opacity-80'>Spécialisée dans la création de sites web professionnels et élégants -<br /> laissez-moi vous aider à vous démarquer.</p>
         <div className='flex items-center pt-5'>
           <Link href="#services">
-            <button className='mr-5 flex items-center bg-[#000] text-[#fff] inter font-medium rounded-sm px-3 py-1 mt-5 '>Mes services <Image src={arrowRight} alt="flèche droite" width={30} /></button>
+            <motion.div
+              whileHover={{ scale: 1.1 }}
+            >
+              <button className='mr-5 flex items-center bg-[#000] text-[#fff] inter font-medium rounded-sm px-3 py-1 mt-5 '>Mes services <Image src={arrowRight} alt="flèche droite" width={30} /></button>  
+            </motion.div>
+            
           </Link>
           <Link href="#a-propos">
-            <p className='pt-5 inter font-medium opacity-80 underline underline-offset-4'>En savoir plus</p>
+            <p className='pt-5 inter font-medium opacity-80 underline underline-offset-4 hover:opacity-100 duration-75'>En savoir plus</p>
           </Link>
         </div>
       

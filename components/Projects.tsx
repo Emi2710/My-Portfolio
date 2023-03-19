@@ -17,6 +17,8 @@ import escoot from '../assets/projects/escoot.png';
 import gericht from '../assets/projects/gericht.png';
 import sportelia from '../assets/projects/sportelia.png';
 
+import { motion } from 'framer-motion'
+
 
 
 type Props = {}
@@ -46,56 +48,56 @@ export default function Projects({}: Props) {
 
           <SwiperSlide>
             <Link href="projets/sportelia">
-              <div className='md:flex  flex-col items-center justify-center  z-20 '>
+              <motion.div whileHover={{ scale: 1.03 }} className='md:flex  flex-col items-center justify-center  z-20 '>
                 <Image src={sportelia} alt="Sportelia" className='py-3 height' />
                 <div className='jakarta'> 
                   <p className='inter gradient uppercase font-bold sm:text-md tracking-widest p-3'>Gestion</p>
                   <p className='text-xl font-bold p-3'>Développement outil de gestion en ligne</p>
                   <p className='p-3 underline'>Voir le projet</p>
                 </div>
-              </div>  
+              </motion.div>  
             </Link>
             
           </SwiperSlide>
 
           <SwiperSlide>
             <Link href="projets/alice-formation">
-              <div className='md:flex  flex-col items-center justify-center  z-20 '>
+              <motion.div whileHover={{ scale: 1.03 }} className='md:flex  flex-col items-center justify-center  z-20 '>
                 <Image src={alice} alt="Sportelia" className='py-3 height' />
                 <div className='jakarta'> 
                   <p className='inter gradient uppercase font-bold sm:text-md tracking-widest p-3'>blog</p>
                   <p className='text-xl font-bold p-3'>Alice formation, blog sur les métiers du web</p>
                   <p className='p-3 underline'>Voir le projet</p>
                 </div>
-              </div>  
+              </motion.div>  
             </Link>
             
           </SwiperSlide>
 
           <SwiperSlide>
             <Link href="projets/escootch">
-              <div className='md:flex  flex-col items-center justify-center  z-20 '>
+              <motion.div whileHover={{ scale: 1.03 }} className='md:flex  flex-col items-center justify-center  z-20 '>
                 <Image src={escoot} alt="Sportelia" className='py-3 height' />
                 <div className='jakarta'> 
                   <p className='inter gradient uppercase font-bold sm:text-md tracking-widest p-3'>e-commerce</p>
                   <p className='text-xl font-bold p-3'>Escootch : site e-commerce spécialisé dans les pièces auto</p>
                   <p className='p-3 underline'>Voir le projet</p>
                 </div>
-              </div>  
+              </motion.div>  
             </Link>
             
           </SwiperSlide>
 
           <SwiperSlide>
             <Link href="projets/gericht">
-              <div className='md:flex  flex-col items-center justify-center  z-20 '>
+              <motion.div whileHover={{ scale: 1.03 }} className='md:flex  flex-col items-center justify-center  z-20 '>
                 <Image src={gericht} alt="Sportelia" className='py-3 height' />
                 <div className='jakarta'> 
                   <p className='inter gradient uppercase font-bold sm:text-md tracking-widest p-3'>vitrine</p>
                   <p className='text-xl font-bold p-3'>Site vitrine avec menu pour le restaurant Gericht</p>
                   <p className='p-3 underline'>Voir le projet</p>
                 </div>
-              </div>  
+              </motion.div>  
             </Link>
             
           </SwiperSlide>

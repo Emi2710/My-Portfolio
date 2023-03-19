@@ -5,12 +5,37 @@ import work from '../assets/work.svg'
 import expo from '../assets/expo.jpg'
 import freelance from '../assets/freelance.svg'
 
+import { motion } from 'framer-motion'
+
 type Props = {}
 
 export default function Education({}: Props) {
+
+    const blockAnimation = {
+    hidden: {
+      x: -100,
+      opacity: 0,
+    },
+    visible: custom => ({
+      x: 0,
+      opacity: 1,
+      transition: { duration: custom * 0.2}
+    }),
+  }
+
+
   return (
-    <div className='md:flex justify-center jakarta mt-5'>
-        <div className='p-5 md:mr-32'>
+    <motion.div 
+        initial="hidden"
+        whileInView="visible"
+        viewport={{amount: 0.2}}
+        className='md:flex justify-center jakarta mt-5'
+    >
+        <motion.div 
+            variants={blockAnimation} 
+            custom={3}
+            className='p-5 md:mr-32'
+        >
             <div className='flex items-center'>
                 <Image src={education} alt="icone éducation" />
                 <h3 className='jakarta font-bold text-2xl md:text-4xl pl-3'>Éducation</h3>
@@ -33,8 +58,12 @@ export default function Education({}: Props) {
                     </div>
                 </div>
             </div>
-        </div>
-        <div className='p-5'>
+        </motion.div>
+        <motion.div
+            variants={blockAnimation} 
+            custom={5} 
+            className='p-5'
+        >
             <div className='flex items-center'>
                 <Image src={work} alt="icone éxperience professionnelle" />
                 <h3 className='jakarta font-bold text-2xl md:text-4xl pl-3'>Éxperience</h3>
@@ -69,7 +98,7 @@ export default function Education({}: Props) {
                     </div>    
                 </div>
             </div>
-        </div>
-    </div>
+        </motion.div>
+    </motion.div>
   )
 }
