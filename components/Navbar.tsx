@@ -11,15 +11,16 @@ export default function Navbar({}: Props) {
   const [navbarOpen, setNavbarOpen] = React.useState(false);
 
   return (
-    <>
+    <div className=''>
       <nav className="relative flex flex-wrap items-center justify-between px-2 py-3 mb-3">
         <div className="container px-4 mx-auto flex flex-wrap items-center justify-between">
           <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
             <Link
-              className="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-white"
+              className="jakarta text-lg font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap text-black"
               href="/#"
             >
-              <Image src={logo} alt="Logo lettre E"  width={25}/>
+              Emilie T.
+              {/*<Image src={logo} alt="Logo lettre E"  width={25}/>*/}
             </Link>
             <div
               className="text-white cursor-pointer text-xl leading-none p-3 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
@@ -81,7 +82,7 @@ export default function Navbar({}: Props) {
           </div>
         </div>
       </nav>
-    </>
+    </div>
     
     
   )

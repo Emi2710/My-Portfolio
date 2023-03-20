@@ -25,7 +25,7 @@ type Props = {}
 
 export default function Projects({}: Props) {
   return (
-    <div className=''>
+    <div className='z-500'>
       <p className='inter gradient uppercase font-bold text-xl tracking-widest pl-3 md:pl-14 mt-9'>projets</p>
       <h3 className='jakarta font-bold text-3xl md:text-4xl pt-6 pl-3 md:pl-14'>J&apos;apporte des résultats.</h3>
       <div className='px-3 my-10'>

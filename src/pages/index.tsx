@@ -1,10 +1,10 @@
+"use client"
+
 import Head from 'next/head'
-//import Image from 'next/image'
 import About from '../../components/About'
 import BlogIntro from '../../components/BlogIntro'
 import Contact from '../../components/Contact'
 import Education from '../../components/Education'
-//import FaqQuestions from '../../components/FaqQuestions'
 import Feedback from '../../components/Feedback'
 import Footer from '../../components/Footer'
 import Hero from '../../components/Hero'
@@ -12,9 +12,10 @@ import Navbar from '../../components/Navbar'
 import Projects from '../../components/Projects'
 import Services from '../../components/Services'
 
-import React from "react"
+
+
+import React, { useEffect, useState } from "react"
 import Faq from "react-faq-component"
-//import Test from '../../components/Test'
 
 import { motion } from 'framer-motion'
 
@@ -91,86 +92,95 @@ export default function Home() {
     }),
   }
 
+  
+
+  
+
+  
+
   return (
     <>
-      <Head>
-        <title>Votre site web, conçu sur mesure - Faites appel à une développeuse web professionnelle</title>
-        
-      </Head>
-      <main>
-        <div className='h-screen'>
-          <div>
-            <Navbar />
-          </div>
-
-          <header>
-            <Hero />
-          </header> 
-        </div>
-        
-        <section id="services">
-          <Services />
-        </section>
-
-
-        <section id="projets">
-          <Projects />
-        </section>
-
-        <aside id="blog">
-          <BlogIntro />
-        </aside>
-        
-        <section id="a-propos">
-          <About />
-        </section>
-
-        <section>
-          <Education />
-        </section>
-        
-
-        
-
-        <section>
-          <Feedback />
-        </section>
-        
-        <section className='mt-16'>
-          <div className='bg-black py-12'>
-            <div className='p-5'>
-              <p className='inter gradient text-center uppercase font-bold text-xl tracking-widest'>faq</p>
-              <h2 className='jakarta text-3xl md:text-4xl font-bold text-center pt-6 px-2 m-auto text-white'>Questions posées fréquemment</h2>
+        <Head>
+          <title>Votre site web, conçu sur mesure - Faites appel à une développeuse web professionnelle</title>
+          
+        </Head>
+        <main>
+          <div className='h-screen'>
+            <div className=''>
+              <Navbar />
             </div>
-            <div className='jakarta p-5'>
-              <Faq
-                data={data}
-                styles={styles}
-                //config={config}
-              />  
-            </div>
-            <motion.div 
-              initial="hidden"
-              whileInView="visible"
-              viewport={{amount: 0.2}}>
-              
-              <motion.h2 variants={textAnimation} custom={3} className='jakarta text-3xl md:text-4xl font-bold mt-24 p-5 m-auto text-white'>Prêts à faire décoller votre projet ?<br /><a href="#" className='jakarta gradient font-bold text-3xl md:text-4xl'>Contactez-moi.</a></motion.h2>
 
-            </motion.div>
-
-            <Contact />
+            <header className=''>
+              <Hero />
+            </header> 
           </div>
           
+          <section id="services">
+            <Services />
+          </section>
+
+
+          <section id="projets">
+            <Projects />
+          </section>
+
+          <aside id="blog">
+            <BlogIntro />
+          </aside>
           
-        </section>
+          <section id="a-propos">
+            <About />
+          </section>
 
-        
+          <section>
+            <Education />
+          </section>
+          
 
-        
-      </main>
-      <footer>
-        <Footer />
-      </footer>
-    </>
+          
+
+          <section>
+            <Feedback />
+          </section>
+          
+          <section className='mt-16'>
+            <div className='bg-black py-12'>
+              <div className='p-5'>
+                <p className='inter gradient text-center uppercase font-bold text-xl tracking-widest'>faq</p>
+                <h2 className='jakarta text-3xl md:text-4xl font-bold text-center pt-6 px-2 m-auto text-white'>Questions posées fréquemment</h2>
+              </div>
+              <div className='jakarta p-5'>
+                <Faq
+                  data={data}
+                  styles={styles}
+                  //config={config}
+                />  
+              </div>
+              <motion.div 
+                initial="hidden"
+                whileInView="visible"
+                viewport={{amount: 0.2}}>
+                
+                <motion.h2 variants={textAnimation} custom={3} className='jakarta text-3xl md:text-4xl font-bold mt-24 p-5 m-auto text-white'>Prêts à faire décoller votre projet ?<br /><a href="#" className='jakarta gradient font-bold text-3xl md:text-4xl'>Contactez-moi.</a></motion.h2>
+
+              </motion.div>
+
+              <Contact />
+            </div>
+            
+            
+          </section>
+
+          
+
+          
+        </main>
+        <footer>
+          <Footer />
+        </footer>
+      </>
+
+      
+    
   )
 }
