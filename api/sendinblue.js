@@ -17,3 +17,4 @@ const sendinblue = (sendSmtpEmail) => {
 }
 
 module.exports = sendinblue
+

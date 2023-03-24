@@ -65,7 +65,7 @@ export default function Navbar({}: Props) {
               <li className="nav-item">
                 <Link
                   className="px-3 py-2 flex items-center font-semibold leading-snug hover:opacity-75 duration-75"
-                  href="/#blog"
+                  href="/blog"
                 >
                   <span className="ml-2">Blog</span>
                 </Link>

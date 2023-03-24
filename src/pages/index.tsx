@@ -102,6 +102,7 @@ export default function Home() {
     <>
         <Head>
           <title>Votre site web, conçu sur mesure - Faites appel à une développeuse web professionnelle</title>
+          <meta name="description" content="En tant que développeuse web professionnelle, je conçois des sites web personnalisés pour vous aider dans vos projets. Je travaille avec vous pour créer une expérience utilisateur engageante et intuitive. Contactez-moi pour discuter de votre prochain projet en ligne." />
           
         </Head>
         <main>
