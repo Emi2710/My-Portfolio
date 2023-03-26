@@ -3,10 +3,11 @@ import React, { useState } from 'react'
 import PortableText from 'react-portable-text';
 import Layout from '../../../layout/Layout'
 import { sanityClient, urlFor } from '../../../client/sanity';
-import { Post } from '../../../typings';
+//import { ArticleReference, Post } from '../../../typings';
 
 import { motion } from 'framer-motion';
 import Link from 'next/link';
+import RelatedArticle from '../../../components/blog/RelatedArticle';
 
 //import {useForm, SubmitHandler} from 'react-hook-form'
 
@@ -14,6 +15,34 @@ import Link from 'next/link';
 interface Props {
     post: Post;
 }
+
+type Post = {
+    _id : string;
+    _createdAt: string;
+    title: string;
+    slug: {
+        current: string;
+    };
+    publishedAt: string;
+    body: [object];
+    references: ArticleReferences;
+    
+    
+}
+
+
+type ArticleReference = {
+  title: string;
+  publishedAt: string;
+  slug: {
+    current: string;
+  }
+};
+
+type ArticleReferences = Array<ArticleReference>;
+
+
+
 const Post = ({post}: Props) => {
     
   return (
@@ -45,28 +74,33 @@ const Post = ({post}: Props) => {
              }}
             />
         </div>
-    </article>
+    </article>{console.log(post)}
     <aside>
-        {post.articlesRelated && <>
-        <h4 className='jakarta text-2xl font-bold underline p-5'>Voir également:</h4>
-        <motion.div whileHover={{ scale: 1.01 }} className='md:py-8 mt-5 mx-3 p-5'>
+        
+        <h4 className='jakarta text-2xl font-bold underline p-5 mt-10'>Voir également:</h4>
+        
+        <motion.div className='md:py-8 mt-5 mx-3 p-5'>
             
-            <Link href={`/blog/${post.articlesRelated.slug.current}`}>
-                
+            {post.references?.map((reference) => (
+                <motion.div whileHover={{ scale: 1.01 }} key={reference.slug.current} className="mb-10">
+
+                    <Link href={`/blog/${reference.slug}`}>               
                             <div className='pb-5'>
-                              <p className='inter opacity-80'>{post.articlesRelated.publishedAt}</p>
-                              <h4 className='jakarta font-bold text-xl md:text-2xl pt-5 max-w-2xl'>{post.articlesRelated.title}</h4>
+                              <p className='inter opacity-80'>{reference.publishedAt}</p>
+                              <h4 className='jakarta font-bold text-xl md:text-2xl pt-5 max-w-2xl'>{reference.title}</h4>
                               <p className='inter underline pt-5'>Lire l&apos;article</p>
                           </div>
                           <hr className='m-auto'/>
 
-            </Link>
+                    </Link>
+                </motion.div>
+            ))}
                           
         </motion.div>
         
         
         
-        </>}
+        
         
     </aside>
     
@@ -74,6 +108,8 @@ const Post = ({post}: Props) => {
       </Layout>
   )
 }
+
+
 export async function getStaticPaths() {
     const query = 
     `*[_type == 'post']{
@@ -103,13 +139,11 @@ export const getStaticProps: GetStaticProps = async ({params}) => {
         title,
         slug,
         body,
-        articlesRelated -> {
-        publishedAt,
+        "references": references[]->{
         title,
-        slug  {
-        current
+        publishedAt,
+        "slug": slug.current,
       },
-      }, 
       }
     `
     const post = await sanityClient.fetch(query, {

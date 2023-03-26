@@ -7,14 +7,20 @@ export interface Post {
     };
     publishedAt: string;
     body: [object];
-    articlesRelated: {
-        title: string;
-        publishedAt: string;
-        slug: {
-        current: string;
-    };
-    }
+    references: ArticleReferences;
+    
     
 }
 
+
+
+
+type ArticleReference = {
+  title: string;
+  slug: {
+    current: string;
+  }
+};
+
+type ArticleReferences = Array<ArticleReference>;
 

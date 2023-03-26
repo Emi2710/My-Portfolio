@@ -29,10 +29,10 @@ export default {
       type: 'blockContent',
     },
     {
-      name: 'articlesRelated',
+      name: 'references',
       title: 'Articles en suggestion',
-      type: 'reference',
-      to: [{ type: 'post' }],
+      type: 'array',
+      of: [{ type: 'reference', to: {type: 'post'}}],
     },
   ],
 
