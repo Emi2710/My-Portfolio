@@ -74,7 +74,7 @@ const Post = ({post}: Props) => {
              }}
             />
         </div>
-    </article>{console.log(post)}
+    </article>
     <aside>
         
         <h4 className='jakarta text-2xl font-bold underline p-5 mt-10'>Voir également:</h4>

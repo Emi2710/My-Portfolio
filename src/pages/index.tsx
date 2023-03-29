@@ -17,7 +17,17 @@ import Services from '../../components/Services'
 import React, { useEffect, useState } from "react"
 import Faq from "react-faq-component"
 
+//import { sanityClient } from '../../client/sanity'
+
 import { motion } from 'framer-motion'
+import { GetStaticProps } from 'next'
+import { PostsIntro } from '../../typings'
+import { fetchBlogIntro } from '../../utils/fetchBlogIntro'
+
+
+type Props = {
+  blogIntro: PostsIntro[]
+}
 
 interface PropTypes {
     data: {
@@ -78,7 +88,7 @@ const config = {
     // tabFocus: true
 }
 
-export default function Home() {
+const Home = ({blogIntro}: Props) => {
 
   const textAnimation = {
     hidden: {
@@ -126,7 +136,7 @@ export default function Home() {
           </section>
 
           <aside id="blog">
-            <BlogIntro />
+            <BlogIntro blogIntro={blogIntro} />
           </aside>
           
           <section id="a-propos">
@@ -184,4 +194,17 @@ export default function Home() {
       
     
   )
+}
+
+export default Home;
+
+
+export const getStaticProps: GetStaticProps<Props> = async () => {
+  const blogIntro: PostsIntro[] = await fetchBlogIntro();
+
+  return {
+    props: {
+      blogIntro,
+    }
+  }
 }

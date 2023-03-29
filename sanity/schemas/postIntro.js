@@ -4,10 +4,15 @@ export default {
   type: 'document',
   fields: [
     {
-      name: 'intro',
+      name: 'references',
       title: 'Introduction',
       type: 'array',
       of: [{ type: 'reference', to: [{ type: 'post' }] }],
+    },
+    {
+      name: 'title',
+      title: 'Title',
+      type: 'string',
     },
     
   ],

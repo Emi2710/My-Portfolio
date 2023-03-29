@@ -12,11 +12,22 @@ export interface Post {
     
 }
 
+export interface PostsIntro {
+    _id : string;
+    _createdAt: string;
+    _type: 'postIntro';
+    title: string;
+    references: ArticleReferences;
+    
+    
+}
+
 
 
 
 type ArticleReference = {
   title: string;
+  publishedAt: string;
   slug: {
     current: string;
   }
