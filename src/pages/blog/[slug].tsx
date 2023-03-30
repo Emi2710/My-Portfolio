@@ -1,5 +1,5 @@
 import { GetStaticProps } from 'next';
-import React, { useState } from 'react'
+import React from 'react'
 import PortableText from 'react-portable-text';
 import Layout from '../../../layout/Layout'
 import { sanityClient, urlFor } from '../../../client/sanity';

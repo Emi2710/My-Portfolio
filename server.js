@@ -2,7 +2,7 @@ const express = require("express");
 const next = require("next");
 const dotenv = require("dotenv");
 const bodyParser = require('body-parser');
-const sendinblue = require('./api/sendinblue');
+const sendinblue = require('./src/pages/api/sendinblue');
 const { comment } = require("postcss");
 
 
