@@ -197,7 +197,7 @@ const Home = ({blogIntro}: Props) => {
 export default Home;
 
 
-/*export const getStaticProps: GetStaticProps<Props> = async () => {
+export const getStaticProps: GetStaticProps<Props> = async () => {
   const blogIntro: PostsIntro[] = await fetchBlogIntro();
 
   return {
@@ -205,4 +205,4 @@ export default Home;
       blogIntro,
     }
   }
-}*/
+}
