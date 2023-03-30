@@ -61,7 +61,7 @@ export default function BlogIntro({blogIntro}: Props) {
         {blogIntro.map((post) => (
           <>
             {post.references?.map((reference) => (
-              <Link href={`/blog/${reference.slug.current}`}>
+              <Link href={`/blog/${reference.slug.current}`} key={reference.slug.current}>
 
                 <div className='md:py-8 m-3 md:w-2/3 md: md:ml-auto '>
                   <motion.div whileHover={{ scale: 1.03 }} className='text-white pb-5'>
