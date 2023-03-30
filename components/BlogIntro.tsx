@@ -58,9 +58,9 @@ export default function BlogIntro({blogIntro}: Props) {
           <hr className=' m-auto opacity-40'/>
   </div>*/}
 
-        {blogIntro.map((post) => (
+        {blogIntro?.map((post) => (
           <>
-            {post.references?.map((reference) => (
+            {post?.references?.map((reference) => (
               <div key={reference.slug.current}>
                 <Link href={`/blog/${reference.slug.current}`}>
 
