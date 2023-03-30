@@ -61,17 +61,20 @@ export default function BlogIntro({blogIntro}: Props) {
         {blogIntro.map((post) => (
           <>
             {post.references?.map((reference) => (
-              <Link href={`/blog/${reference.slug.current}`} key={reference.slug.current}>
+              <div key={reference.slug.current}>
+                <Link href={`/blog/${reference.slug.current}`}>
 
-                <div className='md:py-8 m-3 md:w-2/3 md: md:ml-auto '>
-                  <motion.div whileHover={{ scale: 1.03 }} className='text-white pb-5'>
-                      <p className='inter opacity-80'>{reference.publishedAt}</p>
-                      <h4 className='jakarta font-bold text-xl md:text-2xl pt-5 text-white'>{reference.title}</h4>
-                      <p className='inter underline pt-5'>Lire l&apos;article</p>
-                  </motion.div>
-                  <hr className=' m-auto opacity-40'/>
-                </div>    
-              </Link>
+                  <div className='md:py-8 m-3 md:w-2/3 md: md:ml-auto '>
+                    <motion.div whileHover={{ scale: 1.03 }} className='text-white pb-5'>
+                        <p className='inter opacity-80'>{reference.publishedAt}</p>
+                        <h4 className='jakarta font-bold text-xl md:text-2xl pt-5 text-white'>{reference.title}</h4>
+                        <p className='inter underline pt-5'>Lire l&apos;article</p>
+                    </motion.div>
+                    <hr className=' m-auto opacity-40'/>
+                  </div>    
+                </Link>  
+              </div>
+              
             
                 ))}
           </>
