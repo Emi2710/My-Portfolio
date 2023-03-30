@@ -14,7 +14,7 @@ type Props = {
 export default function BlogIntro({blogIntro}: Props) {
 
   
-  console.log(blogIntro)
+  
 
   const textAnimation = {
     hidden: {

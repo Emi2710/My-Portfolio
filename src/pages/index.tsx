@@ -14,10 +14,9 @@ import Services from '../../components/Services'
 
 
 
-import React, { useEffect, useState } from "react"
+import React from "react"
 import Faq from "react-faq-component"
 
-//import { sanityClient } from '../../client/sanity'
 
 import { motion } from 'framer-motion'
 import { GetStaticProps } from 'next'
