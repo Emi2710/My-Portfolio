@@ -3,13 +3,10 @@ import React, { useState } from 'react'
 import PortableText from 'react-portable-text';
 import Layout from '../../../layout/Layout'
 import { sanityClient, urlFor } from '../../../client/sanity';
-//import { ArticleReference, Post } from '../../../typings';
 
 import { motion } from 'framer-motion';
 import Link from 'next/link';
-import RelatedArticle from '../../../components/blog/RelatedArticle';
 
-//import {useForm, SubmitHandler} from 'react-hook-form'
 
 
 interface Props {
