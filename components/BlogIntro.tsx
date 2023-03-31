@@ -7,11 +7,11 @@ import { PostsIntro } from '../typings';
 
 
 type Props = {
-  blogIntro: PostsIntro[];
+  //blogIntro: PostsIntro[];
 }
 
 
-export default function BlogIntro({blogIntro}: Props) {
+export default function BlogIntro({}: Props) {
 
   
   
@@ -46,7 +46,7 @@ export default function BlogIntro({blogIntro}: Props) {
       
       <motion.div className='md:p-16' variants={textAnimation} custom={3}>
 
-        {blogIntro?.map((post) => (
+        {/*blogIntro?.map((post) => (
           <div key={post._id}>
             {post?.references?.map((reference) => (
               <div key={reference.slug.current}>
@@ -66,7 +66,58 @@ export default function BlogIntro({blogIntro}: Props) {
             
                 ))}
           </div>
-        ))}
+            ))*/}
+
+            <Link href={`/blog/les-etapes-cruciales-du-developpement-de-votre-site-web-du-plan-initial-au-lancement-reussi`}>
+
+                  <div className='md:py-8 m-3 md:w-2/3 md: md:ml-auto '>
+                    <motion.div whileHover={{ scale: 1.03 }} className='text-white pb-5'>
+                        <p className='inter opacity-80'>5 minutes</p>
+                        <h4 className='jakarta font-bold text-xl md:text-2xl pt-5 text-white'>Les étapes cruciales du développement de votre site web : du plan initial au lancement réussi</h4>
+                        <p className='inter underline pt-5'>Lire l&apos;article</p>
+                    </motion.div>
+                    <hr className=' m-auto opacity-40'/>
+                  </div>    
+            </Link>  
+
+            <Link href={`/blog/comprendre-les-couts-de-developpement-de-site-web`}>
+
+                  <div className='md:py-8 m-3 md:w-2/3 md: md:ml-auto '>
+                    <motion.div whileHover={{ scale: 1.03 }} className='text-white pb-5'>
+                        <p className='inter opacity-80'>3 minutes</p>
+                        <h4 className='jakarta font-bold text-xl md:text-2xl pt-5 text-white'>Comprendre les coûts de développement : Ce que vous devez savoir avant de créer votre site Web</h4>
+                        <p className='inter underline pt-5'>Lire l&apos;article</p>
+                    </motion.div>
+                    <hr className=' m-auto opacity-40'/>
+                  </div>    
+            </Link> 
+
+            <Link href={`/blog/les-10-meilleurs-outils-analytiques-et-marketing-pour-ameliorer-votre-site-web`}>
+
+                  <div className='md:py-8 m-3 md:w-2/3 md: md:ml-auto '>
+                    <motion.div whileHover={{ scale: 1.03 }} className='text-white pb-5'>
+                        <p className='inter opacity-80'>2 minutes</p>
+                        <h4 className='jakarta font-bold text-xl md:text-2xl pt-5 text-white'>Les 10 meilleurs outils analytiques et marketing pour améliorer votre site web</h4>
+                        <p className='inter underline pt-5'>Lire l&apos;article</p>
+                    </motion.div>
+                    <hr className=' m-auto opacity-40'/>
+                  </div>    
+            </Link> 
+
+            <Link href={`/blog/les-meilleures-pratiques-pour-un-site-web-de-qualite-et-augmenter-votre-visibilite-en-ligne`}>
+
+                  <div className='md:py-8 m-3 md:w-2/3 md: md:ml-auto '>
+                    <motion.div whileHover={{ scale: 1.03 }} className='text-white pb-5'>
+                        <p className='inter opacity-80'>4 minutes</p>
+                        <h4 className='jakarta font-bold text-xl md:text-2xl pt-5 text-white'>Les meilleures pratiques pour un site web de qualité et augmenter votre visibilité en ligne</h4>
+                        <p className='inter underline pt-5'>Lire l&apos;article</p>
+                    </motion.div>
+                    <hr className=' m-auto opacity-40'/>
+                  </div>    
+            </Link> 
+
+                
+
 
         
       </motion.div>

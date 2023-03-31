@@ -133,9 +133,9 @@ const Home = ({blogIntro}: Props) => {
             <Projects />
           </section>
 
-          {/*<aside id="blog">
-            <BlogIntro blogIntro={blogIntro} />
-  </aside>*/}
+          <aside id="blog">
+            <BlogIntro />
+  </aside>
           
           <section id="a-propos">
             <About />
