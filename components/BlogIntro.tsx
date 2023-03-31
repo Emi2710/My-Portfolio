@@ -47,7 +47,7 @@ export default function BlogIntro({blogIntro}: Props) {
       <motion.div className='md:p-16' variants={textAnimation} custom={3}>
 
         {blogIntro?.map((post) => (
-          <>
+          <div key={post._id}>
             {post?.references?.map((reference) => (
               <div key={reference.slug.current}>
                 <Link href={`/blog/${reference.slug.current}`}>
@@ -65,7 +65,7 @@ export default function BlogIntro({blogIntro}: Props) {
               
             
                 ))}
-          </>
+          </div>
         ))}
 
         

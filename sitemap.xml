@@ -1,0 +1,31 @@
+import { createSitemap } from 'sitemap'
+import { getStaticPaths } from 'next'
+
+async function generateSitemapXml() {
+  const pages = await getStaticPaths()
+
+  const urls = pages.map((page) => {
+    return {
+      url: `${process.env.BASE_URL}${page.params.slug}`,
+      changefreq: 'daily',
+      priority: 0.5,
+    }
+  })
+
+  const sitemap = createSitemap({
+    hostname: process.env.BASE_URL,
+    urls,
+  })
+
+  return sitemap.toString()
+}
+
+async function SitemapXml() {
+  const sitemapXml = await generateSitemapXml()
+
+  res.setHeader('Content-Type', 'text/xml')
+  res.write(sitemapXml)
+  res.end()
+}
+
+export default SitemapXml

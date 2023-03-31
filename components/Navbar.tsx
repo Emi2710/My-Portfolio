@@ -20,7 +20,6 @@ export default function Navbar({}: Props) {
               href="/#"
             >
               Emilie T.
-              {/*<Image src={logo} alt="Logo lettre E"  width={25}/>*/}
             </Link>
             <div
               className="text-white cursor-pointer text-xl leading-none p-3 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
