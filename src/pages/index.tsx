@@ -134,7 +134,7 @@ const Home = ({blogIntro}: Props) => {
           </section>
 
           <aside id="blog">
-            <BlogIntro blogIntro={blogIntro} />
+            <BlogIntro /*blogIntro={blogIntro}*/ />
   </aside>
           
           <section id="a-propos">
@@ -197,7 +197,7 @@ const Home = ({blogIntro}: Props) => {
 export default Home;
 
 
-export const getStaticProps: GetStaticProps<Props> = async () => {
+/*export const getStaticProps: GetStaticProps<Props> = async () => {
   const blogIntro: PostsIntro[] = await fetchBlogIntro();
 
   return {
@@ -205,4 +205,4 @@ export const getStaticProps: GetStaticProps<Props> = async () => {
       blogIntro,
     }
   }
-}
+}*/

@@ -7,11 +7,11 @@ import { PostsIntro } from '../typings';
 
 
 type Props = {
-  blogIntro: PostsIntro[];
+  //blogIntro: PostsIntro[];
 }
 
 
-export default function BlogIntro({blogIntro}: Props) {
+export default function BlogIntro({/*blogIntro*/}: Props) {
 
   
   
@@ -46,7 +46,7 @@ export default function BlogIntro({blogIntro}: Props) {
       
       <motion.div className='md:p-16' variants={textAnimation} custom={3}>
 
-        {blogIntro?.map((post) => (
+        {/*blogIntro?.map((post) => (
           <div key={post._id}>
             {post?.references?.map((reference) => (
               <div key={reference.slug.current}>
@@ -66,9 +66,9 @@ export default function BlogIntro({blogIntro}: Props) {
             
                 ))}
           </div>
-            ))}
+            ))*/}
 
-            {/*<Link href={`/blog/les-etapes-cruciales-du-developpement-de-votre-site-web-du-plan-initial-au-lancement-reussi`}>
+            <Link href={`/blog/les-etapes-cruciales-du-developpement-de-votre-site-web-du-plan-initial-au-lancement-reussi`}>
 
                   <div className='md:py-8 m-3 md:w-2/3 md: md:ml-auto '>
                     <motion.div whileHover={{ scale: 1.03 }} className='text-white pb-5'>
@@ -114,7 +114,7 @@ export default function BlogIntro({blogIntro}: Props) {
                     </motion.div>
                     <hr className=' m-auto opacity-40'/>
                   </div>    
-          </Link>*/} 
+          </Link>
 
                 
 
