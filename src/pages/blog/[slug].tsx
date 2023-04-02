@@ -6,6 +6,7 @@ import { sanityClient, urlFor } from '../../../client/sanity';
 
 import { motion } from 'framer-motion';
 import Link from 'next/link';
+import Head from 'next/head';
 
 
 
@@ -23,6 +24,7 @@ type Post = {
     publishedAt: string;
     body: [object];
     references: ArticleReferences;
+    descriptionSeo: string;
     
     
 }
@@ -44,6 +46,11 @@ const Post = ({post}: Props) => {
     
   return (
       <Layout>
+          <Head>
+          <title>{post.title}</title>
+          <meta name="description" content={`${post.descriptionSeo}`} />
+          
+        </Head>
     
     <article className='jakarta max-w-3xl mx-auto p-5'>
         <h1 className='text-2xl md:text-3xl mt-10 mb-3 font-bold'>{post.title}</h1>
@@ -136,6 +143,7 @@ export const getStaticProps: GetStaticProps = async ({params}) => {
         title,
         slug,
         body,
+        descriptionSeo,
         "references": references[]->{
         title,
         publishedAt,

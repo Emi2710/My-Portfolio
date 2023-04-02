@@ -34,6 +34,12 @@ export default {
       type: 'array',
       of: [{ type: 'reference', to: {type: 'post'}}],
     },
+    {
+      name: 'descriptionSeo',
+      title: 'Description SEO',
+      type: 'string',
+      
+    },
   ],
 
   
