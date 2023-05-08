@@ -18,6 +18,9 @@ export default function Document() {
             `,
           }}
         />
+        
+        <link rel="canonical" href="https://emilietkv.com/#" />
+        <link rel='shortcut icon' href='/favicon.ico' />
 
       </Head>
       <body className=''>

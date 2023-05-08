@@ -86,6 +86,7 @@ const config = {
     // tabFocus: true
 }
 
+
 const Home = ({blogIntro}: Props) => {
 
   const textAnimation = {
@@ -100,11 +101,6 @@ const Home = ({blogIntro}: Props) => {
     }),
   }
 
-  
-
-  
-
-  
 
   return (
     <>
@@ -112,6 +108,7 @@ const Home = ({blogIntro}: Props) => {
           <title>Votre site web, conçu sur mesure - Faites appel à une développeuse web professionnelle</title>
           <meta name="description" content="En tant que développeuse web professionnelle, je conçois des sites web personnalisés pour vous aider dans vos projets. Je travaille avec vous pour créer une expérience utilisateur engageante et intuitive. Contactez-moi pour discuter de votre prochain projet en ligne." />
           
+
         </Head>
         <main>
           <div className='h-screen'>
