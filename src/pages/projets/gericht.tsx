@@ -17,7 +17,7 @@ export default function gericht({}: Props) {
         <div className='jakarta py-16 px-5 text-lg leading-9'>
 
           
-          <p className='mb-8 md:w-3/4 md:m-auto'>Gericht est un site vitrine pour restaurant que j'ai d&eacute;velopp&eacute; avec soin, afin de respecter son design moderne et attirant.</p>
+          <p className='mb-8 md:w-3/4 md:m-auto'>Gericht est un site vitrine pour restaurant que j&apos;ai d&eacute;velopp&eacute; avec soin, afin de respecter son design moderne et attirant.</p>
           
             <Image src={gericht3} className='w-100 md:w-1/2 m-auto my-5' alt="extrait du site vitrine restaurant gericht" />
             <Image src={gericht4} className='w-100 md:w-1/2 m-auto my-5' alt="extrait du site vitrine restaurant gericht" />

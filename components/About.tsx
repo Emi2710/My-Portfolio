@@ -3,6 +3,7 @@ import React from 'react'
 import dev1 from '../assets/about/dev1.jpg'
 import dev2 from '../assets/about/dev2.jpg'
 
+import Link from 'next/link'
 import { motion } from 'framer-motion'
 
 type Props = {}
@@ -38,7 +39,7 @@ export default function About({}: Props) {
           <h3 className='jakarta font-bold text-3xl md:text-4xl pt-8 pl-3 md:pl-14'>À mon propos !</h3>
         </div>  
         <div className='pt-14'>
-          <p className='jakarta opacity-70 text-xl leading-10 pl-3'>Passionnée par l&apos;informatique, je crée maintenant des sites web <br />pour mes clients en tant que développeuse.<br />Après tout, ce qu&apos;on aime on le fait bien, n&apos;est-ce-pas ? <br />Pour en savoir plus sur moi, c'est par <a href="/blog/qui-suis-je-mon-parcours-en-tant-que-developpeuse-web-professionnelle" className='bold underline'>ici</a></p>
+          <p className='jakarta opacity-70 text-xl leading-10 pl-3'>Passionnée par l&apos;informatique, je crée maintenant des sites web <br />pour mes clients en tant que développeuse.<br />Après tout, ce qu&apos;on aime on le fait bien, n&apos;est-ce-pas ? <br />Pour en savoir plus sur moi, c&apos;est par <Link href="/blog/qui-suis-je-mon-parcours-en-tant-que-developpeuse-web-professionnelle" className='bold underline'>ici</Link></p>
         </div>
       </motion.div>
       <motion.div 
