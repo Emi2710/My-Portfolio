@@ -68,6 +68,18 @@ export default function BlogIntro({/*blogIntro*/}: Props) {
           </div>
             ))*/}
 
+            <Link href={`/blog/qui-suis-je-mon-parcours-en-tant-que-developpeuse-web-professionnelle`}>
+
+                  <div className='md:py-8 m-3 md:w-2/3 md: md:ml-auto '>
+                    <motion.div whileHover={{ scale: 1.03 }} className='text-white pb-5'>
+                        <p className='inter opacity-80'>3 minutes</p>
+                        <h4 className='jakarta font-bold text-xl md:text-2xl pt-5 text-white'>Qui suis-je ? Mon parcours en tant que développeuse web professionnelle</h4>
+                        <p className='inter underline pt-5'>Lire l&apos;article</p>
+                    </motion.div>
+                    <hr className=' m-auto opacity-40'/>
+                  </div>    
+            </Link>
+
             <Link href={`/blog/les-etapes-cruciales-du-developpement-de-votre-site-web-du-plan-initial-au-lancement-reussi`}>
 
                   <div className='md:py-8 m-3 md:w-2/3 md: md:ml-auto '>
@@ -114,7 +126,7 @@ export default function BlogIntro({/*blogIntro*/}: Props) {
                     </motion.div>
                     <hr className=' m-auto opacity-40'/>
                   </div>    
-          </Link>
+            </Link>
 
                 
 
